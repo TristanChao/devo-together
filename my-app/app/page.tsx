@@ -8,8 +8,8 @@ export default function Home() {
   const now = new Date()
   
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-start sm:items-start">
+    <div className="font-sans flex flex-col items-center min-h-screen pt-20 pb-20 gap-16 sm:pt-25">
+      <main className="flex flex-col gap-[32px] items-start mx-5 sm:items-start">
         {posts.map((post: Post) => {
           return (
             <div key={post.id} className="text-left w-full max-w-[40rem]">
