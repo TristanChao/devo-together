@@ -8,13 +8,19 @@ import { RiHomeFill } from "react-icons/ri";
 
 export default function Navbar() {
   return (
-    <div className="z-50 fixed w-full flex justify-center py-3 bg-[var(--color-background)]">
-      <div className="flex justify-between items-center w-[200px]">
-        <Link href="/daily"><FaCalendarAlt className="w-7 h-7"/></Link>
-        <Link href="/search"><FaSearch className="w-7 h-7"/></Link>
-        <Link href="/"><GoHomeFill className="w-10 h-10"/></Link>
-        <Link href="/create"><FaPenToSquare className="w-7 h-7"/></Link>
-        <Link href="/profile"><IoPersonSharp className="w-7 h-7"/></Link>
+    <div className="z-50 fixed w-full flex items-center py-3 bg-[var(--color-background)]">
+      <div className="hidden lg:inline-block lg:basis-1/4">
+        <Link href="/" className="text-xl ml-5 hidden sm:inline">DevoTogether</Link>
+      </div>
+      
+      <div className="basis-full lg:basis-1/2">
+        <div className="justify-self-center flex justify-between items-center w-[280px] sm:w-[400px]">
+          <Link href="/daily"><FaCalendarAlt className="w-7 h-7"/></Link>
+          <Link href="/search"><FaSearch className="w-7 h-7"/></Link>
+          <Link href="/"><GoHomeFill className="w-10 h-10"/></Link>
+          <Link href="/create"><FaPenToSquare className="w-7 h-7"/></Link>
+          <Link href="/profile"><IoPersonSharp className="w-7 h-7"/></Link>
+        </div>
       </div>
     </div>
   )
