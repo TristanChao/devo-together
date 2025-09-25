@@ -19,7 +19,7 @@ export default function Navbar() {
   const blueIcon = " text-blue-500"
   
   return (
-    <div className="z-50 fixed w-full flex items-center py-3 bg-[var(--color-background)]">
+    <div className="z-50 fixed w-full flex items-center py-3 bg-background">
       <div className="hidden lg:inline-block lg:basis-1/4">
         <Link href="/" className="text-xl ml-5 hidden sm:inline">DevoTogether</Link>
       </div>
