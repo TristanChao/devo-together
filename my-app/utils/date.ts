@@ -29,6 +29,8 @@ export function formatTime(timestamp: Date): string {
       }
     } else if (hourDiff === 1) {
       return ("1 hour ago")
+    } else if (hourDiff < 0) {
+      return (`${hourDiff + 24} hours ago`)
     } else {
       return (`${hourDiff} hours ago`)
     }
